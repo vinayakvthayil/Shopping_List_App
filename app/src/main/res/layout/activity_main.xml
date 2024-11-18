@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@mipmap/ic_launcher_background">
+
+    <!-- Heading Section -->
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping List"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:textStyle="bold" />
+
+    <!-- Add Item Button -->
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:layout_width="wrap_content" />
+
+    <!-- Shopping List Section -->
+    <ListView
+        android:id="@+id/shoppingListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:background="@mipmap/ic_launcher_background">
+
+    <!-- Heading TextView -->
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Add New Item"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <!-- Item Name EditText -->
+    <EditText
+        android:id="@+id/itemNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Item Name"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Item Quantity EditText -->
+    <EditText
+        android:id="@+id/itemQuantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Quantity"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Item Notes EditText -->
+    <EditText
+        android:id="@+id/itemNotesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Notes"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Save/Save Changes Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:text="Add Item"
+        android:textSize="16sp" />
+</LinearLayout>
