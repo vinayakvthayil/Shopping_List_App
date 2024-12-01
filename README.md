@@ -14,21 +14,21 @@ This **Shopping List App** allows users to add, edit, and view items in their sh
 <table>
   <tr>
     <th>Home Page</th>
+      <th>Add Item</th>
+    <th>Added List</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/51b8e32d-9fe5-43ea-903f-f81b6c8ff040" width="300" height="600"></td>
+    <td><img src="https://github.com/user-attachments/assets/7d13931a-cadc-41aa-9246-673e2c3866f7" width="300" height="600"></td>
+    <td><img src="https://github.com/user-attachments/assets/d80970a4-2945-49c8-bc5c-974cc8ac0b35" width="300" height="600"></td>
+  </tr>
+  <tr>  
     <th>Edit Item</th>
     <th>After Editing List</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/51b8e32d-9fe5-43ea-903f-f81b6c8ff040" width="300" height="600"></td>
     <td><img src="https://github.com/user-attachments/assets/e44dd23e-f5c9-4321-b7ae-923c1c61e511" width="300" height="600"></td>
-    <td><img src="https://github.com/user-attachments/assets/d80970a4-2945-49c8-bc5c-974cc8ac0b35" width="300" height="600"></td>
-  </tr>
-  <tr>
-    <th>Added List</th>
-    <th>Add Item</th>
-  </tr>
-  <tr>
     <td><img src="https://github.com/user-attachments/assets/d19fecc5-348f-40d6-9d27-40a13ee3fc1f" width="300" height="600"></td>
-    <td><img src="https://github.com/user-attachments/assets/7d13931a-cadc-41aa-9246-673e2c3866f7" width="300" height="600"></td>
   </tr>
 </table>
 
