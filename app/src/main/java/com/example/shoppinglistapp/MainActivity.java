@@ -19,36 +19,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listView = findViewById(R.id.shoppingListView);
-
-        // Initialize the adapter to prevent null pointer issues
         adapter = new ShoppingListAdapter(this, null);
         listView.setAdapter(adapter);
-
-        loadShoppingItems();
 
         findViewById(R.id.addItemButton).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AddEditItemActivity.class);
             startActivity(intent);
         });
+
+        loadShoppingItems();
     }
 
     private void loadShoppingItems() {
-        Cursor cursor = getContentResolver().query(
-                Uri.parse("content://com.example.shoppinglistapp.provider/shopping_items"),
-                null, null, null, null);
-
-        if (cursor != null) {
-            // Update the adapter with new cursor data
-            adapter.swapCursor(cursor);
-        } else {
-            Toast.makeText(this, "No items to display", Toast.LENGTH_SHORT).show();
-        }
+        new Thread(() -> {
+            Cursor cursor = getContentResolver().query(
+                    ShoppingListProvider.CONTENT_URI, null, null, null, null);
+            runOnUiThread(() -> {
+                if (cursor != null) {
+                    adapter.swapCursor(cursor);
+                } else {
+                    Toast.makeText(this, "No items to display", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }).start();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        // Reload items whenever the activity is resumed
         loadShoppingItems();
     }
 }
